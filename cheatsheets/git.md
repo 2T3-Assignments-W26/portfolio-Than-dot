@@ -6,4 +6,4 @@ Thanpisit Nimprasert
 
 2566758
 
-I am a computer science student
+I am a computer science student.
