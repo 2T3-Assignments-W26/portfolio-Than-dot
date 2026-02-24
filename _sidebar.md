@@ -6,5 +6,5 @@
   - [PowerShell](cheatsheets/powershell.md)
 
 - About Me
-  - [Online resume](Thanpisit_Nimprasert_2566758.md)
-  - [My Projects](myProjects.md)
+  - [Online resume](./aboutme/Thanpisit_Nimprasert_2566758.md)
+  - [My Projects](./aboutme/myProjects.md)
