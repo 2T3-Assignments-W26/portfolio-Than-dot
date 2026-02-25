@@ -1,26 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
 
-  <!-- 
+    <!-- 
     =============================================
     BASIC PAGE METADATA
     =============================================
     - Title appears in browser tab
     - Change this once for the entire site
   -->
-  <title>Info Tech Cheat Sheets</title>
+    <title>Info Tech Cheat Sheets</title>
 
-  <!-- 
+    <!-- 
     =============================================
     RESPONSIVE VIEWPORT
     =============================================
     Ensures the site looks good on laptops and tablets.
   -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- 
+    <!-- 
     =============================================
     DOCSIFY THEME
     =============================================
@@ -34,21 +34,24 @@
     
     Docs: https://docsify.js.org/#/themes
   -->
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css" />
-</head>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css"
+    />
+  </head>
 
-<body>
-  <!-- 
+  <body>
+    <!-- 
     =============================================
     DOCSIFY APP ROOT
     =============================================
     Docsify renders all Markdown content inside this div.
     Students should NOT edit this.
   -->
-  <div id="app"></div>
+    <div id="app"></div>
 
-  <script>
-    /*
+    <script>
+      /*
       =============================================
       DOCSIFY CONFIGURATION
       =============================================
@@ -61,27 +64,27 @@
       - Most site behavior is controlled here
       - Safe place to enable/disable features later
     */
-    window.$docsify = {
-      // Name displayed in the sidebar
-      name: 'Info Tech Cheat Sheets',
+      window.$docsify = {
+        // Name displayed in the sidebar
+        name: "Info Tech Cheat Sheets",
 
-      // GitHub repo link (optional)
-      // Set to the Classroom template repo if desired
-      repo: '',
+        // GitHub repo link (optional)
+        // Set to the Classroom template repo if desired
+        repo: "",
 
-      //Home page
-      homepage: 'README.md',
+        //Home page
+        homepage: "README.md",
 
-      // Load README.md as the homepage
-      loadSidebar: true,
+        // Load README.md as the homepage
+        loadSidebar: true,
 
-      // Sidebar depth (headings shown)
-      subMaxLevel: 2,
+        // Sidebar depth (headings shown)
+        subMaxLevel: 2,
 
-      // Enable navigation between pages
-      auto2top: true,
+        // Enable navigation between pages
+        auto2top: true,
 
-      /*
+        /*
         =============================================
         SEARCH (OPTIONAL - DISABLED FOR NOW)
         =============================================
@@ -96,7 +99,7 @@
         },
       */
 
-      /*
+        /*
         =============================================
         THEMES & PLUGINS (FUTURE GROWTH)
         =============================================
@@ -110,19 +113,40 @@
         Docs:
         https://docsify.js.org/#/plugins
       */
-    };
-  </script>
+      };
+    </script>
 
-  <!-- 
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css"
+    />
+
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+    <script>
+      const gitalk = new Gitalk({
+        clientID: "Github Application Client ID",
+        clientSecret: "Github Application Client Secret",
+        repo: "Github repo",
+        owner: "Github repo owner",
+        admin: [
+          "Github repo collaborators, only these guys can initialize github issues",
+        ],
+        // facebook-like distraction free mode
+        distractionFreeMode: false,
+      });
+    </script>
+    <!-- 
     =============================================
     DOCSIFY CORE SCRIPT
     =============================================
     Loads Docsify from a CDN.
     No local installation required.
   -->
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
 
-  <!-- 
+    <!-- 
     =============================================
     OPTIONAL PLUGINS (COMMENTED OUT)
     =============================================
@@ -136,8 +160,10 @@
     COPY CODE BUTTON:
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
   -->
+    <script src="https://cdn.jsdelivr.net/gh/rizdaprasetya/docsify-fix-pageload-scroll@master/index.js"></script>
+    x
 
-  <!-- 
+    <!-- 
     =============================================
     HELP & DOCUMENTATION
     =============================================
@@ -147,6 +173,5 @@
 
     Markdown reference:
     https://www.markdownguide.org/basic-syntax/
-  -->
-</body>
+  --></body>
 </html>
