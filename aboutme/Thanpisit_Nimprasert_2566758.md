@@ -4,7 +4,7 @@
 
 ---
 
-577 rue Lafontaine, J6A 8G3 😪555-555-5555😪 example@example.com
+577 rue Lafontaine, J6A 8G3 😪555-555-55555😪 example@example.com
 
 ## Professional Summary
 
